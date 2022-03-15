@@ -14,8 +14,8 @@ body {
     color: #878787;
 
     --menu-item-size: 50px;
-    --green-color: #329680;
-    --blue-color: #099c95;
+    --blue-color: #0a4b78;
+    --green-color: #135e96;
     --dark-green-color: #175b52;
     --white-color: #FFF;
     --gray-color: #EDEDED;
@@ -169,3 +169,27 @@ img {
  margin-right: auto;
  width: 50%;
 }
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+    body, h1 {
+        color: #175b52;
+    }
+}
+
+@media all and (max-width: 480px) {
+    body {
+        position: absolute;
+        background-color: #243545;
+        color: #755100;
+    }
+    h1 {
+        color: #755100;
+    }
+    nav {
+        color: #243545;
+    }
+ }

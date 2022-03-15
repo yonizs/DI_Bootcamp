@@ -1,1 +1,103 @@
-ECHO is on.
+@font-face {
+ font-family: 'Hubballi', cursive;
+ src: url(https://fonts.googleapis.com/css2?family=Hubballi&display=swap);
+} 
+
+
+* {
+ background-color: #0a4b78;
+ color: whitesmoke;
+ font-family: 'Hubballi', cursive;;
+}
+
+body{
+ margin:0px;
+ margin-top:60px;
+ margin-right: auto;
+ margin-left: auto;
+ padding-top: 20px;
+}
+nav{
+ display: flex;
+ position: fixed;
+ top:0;
+ width: 100%;
+ background-color: #1d2327;
+ overflow: auto;
+ height: auto;
+ margin-bottom: 10px;
+ padding: 5px;
+}
+.left-links{
+ flex:1 1 200px;
+}
+.links {
+ display: inline-block;
+ background-color: #1d2327;
+ text-align: center;
+ padding: 14px;
+ color: whitesmoke;
+ text-decoration: none;
+ font-size: 17px;
+ font-weight: bolder;
+}
+.links:hover {
+ border-bottom: 2px solid whitesmoke;
+}
+
+.selected {
+ border-bottom: 2px solid whitesmoke;
+}
+
+div.left-links, .right-links {
+ background-color: #1d2327;
+}
+
+.bi {
+ background-color: #1d2327;
+ color: white;
+ margin-top: 8px;
+ margin-left: 5px;
+}
+
+h1 {
+ color: whitesmoke;
+ text-align: center;
+ font-size: 80px;
+}
+
+h2 {
+ margin-left: 170px;
+}
+table, th, td  {
+ background-color: #646970;
+ border-radius: 25px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 50px;
+ padding: 15px;
+ align-items: center;
+}
+
+img {
+ height: 200px;
+ width: 200px;
+}
+
+.glass {
+margin-right: 40px;
+}
+
+button {
+ background-color: white;
+ color: #dcdcde;
+ border: 2px solid #dcdcde;
+ border-radius: 10px;
+ margin-left: 60px;
+}
+
+button:hover {
+ animation-name: background-color;
+ background-color: #1ed14b;
+ opacity: 0.6;
+ }

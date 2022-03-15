@@ -15,12 +15,13 @@ body{
  margin-left: auto;
  padding-top: 20px;
 }
+
 nav{
+ background-color: #1d2327;
  display: flex;
  position: fixed;
  top:0;
  width: 100%;
- background-color: #1d2327;
  overflow: auto;
  height: auto;
  margin-bottom: 10px;
@@ -47,6 +48,17 @@ nav{
  border-bottom: 2px solid whitesmoke;
 }
 
+div.left-links, .right-links {
+ background-color: #1d2327;
+}
+
+.bi {
+ background-color: #1d2327;
+ color: white;
+ margin-top: 8px;
+ margin-left: 5px;
+}
+
 h1 {
  color: whitesmoke;
  text-align: center;
@@ -66,9 +78,26 @@ table, th, td  {
  align-items: center;
 }
 
-img {
+.img {
  height: 200px;
  width: 200px;
+}
+
+.wishlist {
+ position: absolute;
+ display: none;
+ fill: white;
+ height: 200px;
+ width: 200px;
+ opacity: 0.1;
+ border: none;
+ z-index: auto;
+}
+
+img:hover + .wishlist {
+ display: block;
+ fill: white;
+ opacity: 0.1;
 }
 
 .new {
@@ -78,3 +107,43 @@ margin-right: 40px;
 #best{
  margin-right: 0px;
 }
+
+button {
+ background-color: white;
+ color: #dcdcde;
+ border: 2px solid #dcdcde;
+ border-radius: 10px;
+ margin-left: 60px;
+}
+
+button:hover {
+ animation-name: background-color;
+ background-color: #1ed14b;
+ opacity: 0.6;
+ }
+
+ @media all and (min-width: 1024px) and (max-width: 1280px) {
+  
+  }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) {
+ *{
+  orientation: portrait;
+ }
+ body {
+  flex-wrap: wrap;
+ }
+ nav
+ h1 {
+  font-size: 30px;
+margin-left: auto;
+margin-right: auto;    
+}
+table {
+ overflow: scroll;
+}
+ }
