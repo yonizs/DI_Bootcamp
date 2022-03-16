@@ -1,0 +1,47 @@
+* {
+ box-sizing: border-box;
+}
+
+section {
+ height: 200px;
+ border: 3px solid orange;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-content: center;
+ padding: 2px;
+ padding-left: 3px;
+ padding-right: 3px;
+}
+
+div {
+ border: none;
+ color: #c3c4c7;
+ font-size: 30px;
+ height: 60px;
+ margin-top: auto;
+ margin-bottom: auto;
+ text-align: center;
+ padding: 2px;
+}
+.m-b {
+ height: 60px;
+ width: 43%;
+}
+
+.top {
+ height: 60px;
+ width: 10%;
+}
+
+#purple {
+ background-color: blueviolet;
+}
+
+#blue {
+ background-color: lightblue;
+}
+
+#red {
+ background-color: lightcoral;
+}

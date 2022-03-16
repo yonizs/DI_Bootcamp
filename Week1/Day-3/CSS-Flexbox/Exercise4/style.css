@@ -1,0 +1,36 @@
+* {
+ box-sizing: border-box;
+}
+
+section {
+ height: 400px;
+ border: 3px solid red;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-content: center;
+ padding: 2px;
+}
+
+div {
+ border: none;
+ background-color: #e6ffff;
+ color: black;
+ font-size: 33.3px;
+ text-align: center;
+ padding-top: 0;
+}
+.t-b {
+ height: 33.3%;
+ width: 60%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.mid {
+ align-self: center;
+ height: 33.3%;
+ width: 100%;
+ margin-top: 6px;
+ margin-bottom: 6px;
+}
