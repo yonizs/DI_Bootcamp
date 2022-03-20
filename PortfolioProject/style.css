@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway";
+    color: #FF6D0A;
+}
+
+.mas {
+ position: absolute;
+ z-index: 999;
+}
+
+.menudiv {
+justify-content: flex-end;
+}
+.orange {
+ background-color: #FF6D0A !important;
+}
+.header {
+ position: relative;
+ background-attachment: fixed;
+ background-size: 100%;
+ background-position: center;
+}
+
+.overlay {
+	position: absolute;
+	min-height: 400px;
+	min-width: 100vw;
+	left: 0;
+	top: 0;
+	background: rgba(244, 244, 244, 0.79);
+}
+
+.left {
+justify-content: flex-end;
+}
+
+.button-color {
+background-color: #FF6D0A;
+}
+
+
+.imgcontainer {
+ display: flex;
+ justify-content: center;
+ width: 60px;
+}
+
+.row {
+ flex-direction: row;
+}
+
+.fa-brands {
+ color: #FF6D0A;
+}
+
+img {
+ height: 120px;
+ width: 240px;
+ padding-left: 4px;
+ padding-right: 4px;
+}
+
+section {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 60px;
+}
+
+.inner-about-div {
+ display: inline-block;
+ margin-left: 5px;
+ margin-right: 5px;
+}
+
+.inner-img {
+ border-image: auto;
+ border-radius: 50%;
+}
+
+.abouts {
+ display: flex;
+flex-direction: row;
+justify-content: center;
+width: 800px;
+margin: 0 auto;
+}
+
+.section-header {
+ text-align: center;
+}
+
+.img-column {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 26px;
+}
+
+.img-row {
+ margin: 36px;
+ padding-left: 26px;
+padding-right: 26px;
+}
+ 
+footer {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.fform {
+ flex-direction: column;
+ margin: 0;
+ padding: 1px;
+}
