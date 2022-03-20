@@ -5,3 +5,4 @@ fruits.push('kiwi');
 fruits.shift();
 fruits.reverse();
 console.log(fruits);
+Math.random();
