@@ -6,11 +6,11 @@ class Zoo:
   animals = [""]
   name = ("Jerusalem Zoo")
  def add_animal(new_animal):
-  animal.append()
+  animal.append("lion", "tiger", "bear", "parrot", "monkey", "wolf", "gorilla", "shark", "rhino", "elephant")
  def get_animals():
   print(animals)
  def sell_animals(animal_sold):
-  animals.pop()
+  animals.pop(4,7,8)
  def sort_animals():
    animals.sort()
  def get_goups():
