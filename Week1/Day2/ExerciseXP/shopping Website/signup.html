@@ -4,16 +4,14 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
  <link rel="stylesheet" href="login-signup.css">
+ <title>Signup</title>
 </head>
 <body>
  <nav>
   <div class="left-links">
-   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"/>
-    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-  </svg>
+   <i class="fa-solid fa-crown"></i>
   </div>
   <div class="right-links">
    <a class="links" href="index.html">Home</a>
@@ -23,7 +21,7 @@
    <a class="links" href="#">About</a>
   </div>
  </nav>
- <form action="action_page.php">
+ <form action="action_page.php" class="signup-page">
   <div class="container">
     <h1 class="blank">Sign Up</h1>
     <p class="blank">Please fill in this form to create an account.</p>
@@ -31,6 +29,8 @@
 
     <label for="email" class="blank"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="user" class="blank"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="user" required>
 
     <label for="psw" class="blank"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
@@ -42,10 +42,10 @@
     <label for="lname" class="blank">Last name:</label>
     <input type="text" placeholder="Last name" id="lname" name="lname"><br><br>
     <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" class="blank"> Remember me
+      <input type="checkbox" checked="checked" name="remember" class="blank remember"> Remember me
     </label>
 
-    <p class="blank">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    <p class="blank">By creating an account you agree to our <a href="#" class="terms">Terms &amp; Privacy</a>.</p>
 
     <div class="clearfix">
       <button type="button" class="cancelbtn">Cancel</button>
@@ -53,5 +53,9 @@
     </div>
   </div>
 </form>
+<footer>
+  <p>2026 Author: Yoni Shiller</p>
+  <p>(c) Cups-R-Us</p>
+ </footer>
 </body>
 </html>

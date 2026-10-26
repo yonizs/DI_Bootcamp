@@ -17,7 +17,6 @@ body{
  padding-top: 20px;
 }
 nav{
- display: flex;
  position: fixed;
  top:0;
  width: 100%;
@@ -28,13 +27,21 @@ nav{
  padding: 5px;
 }
 .left-links{
- flex:1 1 200px;
+ float: left;
 }
+
+.fa-crown {
+  background-color: transparent;
+  font-size: 30px;
+  line-height: 50px;
+}
+
 .links {
  display: inline-block;
  background-color: #1d2327;
  text-align: center;
- padding: 14px;
+ line-height: 50px;
+ padding: 0 14px;
  color: whitesmoke;
  text-decoration: none;
  font-size: 17px;
@@ -124,12 +131,46 @@ button:hover {
 
 }
 
-name {
- background-color: #50575e;
-}
-
 @media screen and (max-width: 300px) {
   .cancelbtn, .signupbtn {
     width: 100%;
   }
+}
+
+.right-links{
+  float: right;
+}
+
+.login-form {
+  width: 90%;
+  max-width: 420px;
+  margin: 20px auto;
+}
+
+.signup-page {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+form b, form label, form a, form .psw, form .clearfix {
+  background-color: transparent;
+}
+
+.imgcontainer, .imgcontainer i {
+  background-color: #50575e;
+}
+
+footer{
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+ nav {
+  position: static;
+ }
+ body {
+  margin-top: 0px;
+  padding-top: 0px;
+ }
 }
