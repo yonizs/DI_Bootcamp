@@ -5,7 +5,7 @@ body {
     padding: 0;
     background: linear-gradient(
         #243545,
-        #243545 var(--line-offset),
+        #243545 var(--line-offset)
      
     );
     width: 100vw;
@@ -170,26 +170,48 @@ img {
  width: 50%;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1280px) { }
-
-@media all and (min-width: 768px) and (max-width: 1024px) { }
-
-@media all and (min-width: 480px) and (max-width: 768px) { 
-    body, h1 {
-        color: #175b52;
+@media (min-width: 600px) {
+    h1 {
+        font-size: 35px;
+    }
+    .main-menu > li, .main-menu > li.active {
+        background: yellow;
+        color: black;
     }
 }
 
-@media all and (max-width: 480px) {
-    body {
-        position: absolute;
-        background-color: #243545;
-        color: #755100;
+@media (min-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+    .main-menu > li, .main-menu > li.active {
+        background: lightgreen;
+        color: black;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-menu > li, .main-menu > li.active {
+        background: red;
+        color: white;
+    }
+    article {
+        overflow: auto;
     }
     h1 {
-        color: #755100;
+        float: left;
+        width: 30%;
     }
-    nav {
-        color: #243545;
+    .content {
+        float: right;
+        width: 65%;
+        margin-top: 60px;
     }
- }
+}
+
+@media (min-width: 1200px) {
+    .main-menu > li, .main-menu > li.active {
+        background: black;
+        color: white;
+    }
+}
