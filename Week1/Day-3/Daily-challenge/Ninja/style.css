@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+}
+
+.pattern {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    width: 640px;
+    max-width: 100%;
+    aspect-ratio: 1;
+    margin-bottom: 40px;
+    gap: 3px;
+    background: white;
+}
+
+.orange {
+    --a: #e87524;
+    --b: #f1b573;
+    --c: #8e361b;
+}
+
+.orange > div {
+    background: repeating-linear-gradient(
+        to bottom,
+        var(--a) 0 calc(6.25% - 3px),
+        white calc(6.25% - 3px) 6.25%,
+        var(--b) 6.25% calc(12.5% - 3px),
+        white calc(12.5% - 3px) 12.5%,
+        var(--c) 12.5% calc(18.75% - 3px),
+        white calc(18.75% - 3px) 18.75%
+    );
+}
+
+.orange > div:nth-child(3n + 2) {
+    --a: #f1b573;
+    --b: #8e361b;
+    --c: #e87524;
+}
+
+.orange > div:nth-child(3n) {
+    --a: #8e361b;
+    --b: #e87524;
+    --c: #f1b573;
+}
+
+.grey > div {
+    --shade: #bfc3bf;
+    background: repeating-linear-gradient(
+        to bottom,
+        var(--shade) 0 calc(6.25% - 3px),
+        white calc(6.25% - 3px) 6.25%
+    );
+}
+
+.grey > div:nth-child(4n + 2) {
+    --shade: #939997;
+}
+
+.grey > div:nth-child(4n + 3) {
+    --shade: #5d6567;
+}
+
+.grey > div:nth-child(4n) {
+    --shade: #24282d;
+}
+
+.checks {
+    aspect-ratio: 16/9;
+    gap: 0;
+}
+
+.checks > div {
+    background: repeating-linear-gradient(
+        to bottom,
+        white 0 11.111111%,
+        #e99891 11.111111% 22.222222%
+    );
+}
+
+.checks > div:nth-child(even) {
+    background: repeating-linear-gradient(
+        to bottom,
+        #e99891 0 11.111111%,
+        #d54b40 11.111111% 22.222222%
+    );
+}

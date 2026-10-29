@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f6f7;
+    color: #252525;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(#f5f6f7cc, #f5f6f7cc), url(worldmap.jpg.jpeg);
+    background-size: 1100px auto;
+    background-position: center 120px;
+    background-repeat: no-repeat;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 24px;
+}
+
+h1 {
+    max-width: 760px;
+    margin: 0 auto 50px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.stats h2 {
+    margin: 0 0 12px;
+    color: #5277b8;
+    font-size: 36px;
+}
+
+.stats p {
+    margin: 0;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: dimgrey;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.card {
+    min-width: 0;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px #00000014;
+}
+
+.card:nth-child(2) {
+    margin-top: 90px;
+}
+
+.card:nth-child(3) {
+    margin-top: 35px;
+}
+
+.quote {
+    margin: 0;
+    padding: 25px 24px 40px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.author {
+    position: relative;
+    padding: 38px 15px 24px;
+    background-color: #e77b73;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+}
+
+.card:nth-child(2) .author {
+    background-color: #5277b8;
+}
+
+.card:nth-child(3) .author {
+    background-color: #43b5b0;
+}
+
+.author h3 {
+    margin: 0 0 6px;
+    font-size: 15px;
+}
+
+.author p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 35px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+
+    .stats, .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        margin-top: 50px;
+    }
+
+    .card:nth-child(2), .card:nth-child(3) {
+        margin-top: 0;
+    }
+}
